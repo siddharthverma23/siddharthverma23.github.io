@@ -557,6 +557,13 @@
              alt="GitHub contribution graph for siddharthverma23 over the past year"
              loading="lazy" decoding="async"
              style="display: block; width: 100%; min-width: 700px; height: auto;">
+        <script>
+          /* daily cache-buster so the contribution chart never serves a stale browser/CDN copy */
+          (function () {
+            var img = document.currentScript.previousElementSibling;
+            img.src += "?d=" + new Date().toISOString().slice(0, 10);
+          })();
+        </script>
       </div>
       <div class="gh-meta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 28px;">
         <div id="gh-stats" style="display: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #8a8175;"></div>
